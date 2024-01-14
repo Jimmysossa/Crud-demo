@@ -12,14 +12,15 @@
     right: 1.5em;
     cursor: pointer;
     font-size: 1.2rem;
-    color: rgb(214, 35, 35);
+    color: rgb(1, 1, 1);
 }
 .form_x:hover {
     transform: scale(1.2);
 }
 .form_title {
-    text-align: center;
-    font-size: 1.3rem;
+    margin-top: 16px;
+    text-align: start;
+    font-size: 1.6rem;
     margin-bottom: 1em;
 }
 .form_label {
@@ -31,7 +32,6 @@
 }
 .form_field_name {
     font-weight: 300;
-    padding-left: 1.5em;
     font-size: 0.9rem;
 }
 .form_field {
@@ -39,7 +39,9 @@
     background-color: rgb(244, 244, 244);
     border: 1px solid #aaa5;
     font-weight: 300;
+    height: 2.3rem;
     color: #555;
+    border-radius: 4px;
 }
 .form_btn {
     margin-top: 1em;
@@ -49,8 +51,10 @@
     font-weight: 300;
     background-color: #555a88;
     color: white;
-    border-radius: 0.5em;
+    border-radius: 0.2em;
+    width: 100%;
 }
 .form_btn:hover {
     filter: brightness(1.2);
 }
+
