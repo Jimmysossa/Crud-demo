@@ -21,9 +21,11 @@ function App() {
   }
 
   return (
-      <div>
+      <div className='container'>
+        <div className="top-container">
         <h1>User CRUD</h1>
-        <button onClick={handleOpenForm}>Open Form</button>
+        <button className='button-form' onClick={handleOpenForm}>Open Form</button>  
+        </div>
         <div className={`form_container ${isFormClose && 'form_close'}`}>
           <FormUser  
             createUser={createUser}
@@ -33,7 +35,7 @@ function App() {
             setIsFormClose={setIsFormClose}
           />
         </div>
-        <div>
+        <div className='cards-container'>
           {
             users?.map(user => (
               <UseCard

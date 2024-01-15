@@ -13,3 +13,32 @@
 .form_close {
     transform: scale(0);
 }
+
+.container{
+    height: 100px;
+    margin: 10px;
+}
+
+.top-container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+height: 100px;
+}
+
+.button-form{
+    background-color: #555a88;
+    border: none;
+    height: 45px;
+    color: white;
+    width: 200px;
+    border-radius: 2px;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 380px);
+    gap: 16px;
+    justify-content: center;
+}

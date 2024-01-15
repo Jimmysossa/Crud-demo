@@ -21,12 +21,12 @@ const submit =data => {
   }
     reset({
         email: '',
-        password: '',
-        first_name: '',
-        last_name: '',
-        birthday: '',
-    })
-    setIsFormClose(true)
+      password: '',
+       first_name: '',
+         last_name: '',
+         birthday: '',
+     })
+     setIsFormClose(true)
   }
 
   const handleExit =  () => {
