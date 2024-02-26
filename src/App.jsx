@@ -9,8 +9,8 @@ function App() {
   const [userUpdate,setUserUpdate] = useState()
   const[ isFormClose, setIsFormClose ] =useState(true)
 
-  const baseUrl = 'https://users-crud.academlo.tech'
-  const [users,getUsers, createUser, deleteUser, updateUser ] = useFetch(baseUrl)
+  const baseUrl = 'https://crudbd.onrender.com'
+  const [user, getUsers, createUser, deleteUser, updateUser ] = useFetch(baseUrl)
   
   useEffect(() => {
     getUsers()
@@ -37,7 +37,7 @@ function App() {
         </div>
         <div className='cards-container'>
           {
-            users?.map(user => (
+            user?.map(user => (
               <UseCard
                 key={user.id} 
                 user={user}

@@ -7,7 +7,7 @@ const useFetch = (baseUrl) => {
 
     //read
     const getApi = () => {
-        const url = `${baseUrl}/users/`
+        const url = `${baseUrl}/crud/`
         axios.get(url)
         .then(res => setResponse(res.data))
         .catch(err => console.log(err))
@@ -15,7 +15,7 @@ const useFetch = (baseUrl) => {
 
     //create
     const createApi = (data) => {
-        const url = `${baseUrl}/users/`
+        const url = `${baseUrl}/crud/`
         axios.post(url, data)
         .then(res => {
             setResponse([...response, res.data])
@@ -24,7 +24,7 @@ const useFetch = (baseUrl) => {
     }
     //delete
     const deleteApi = (id) => {
-        const url = `${baseUrl}/users/${id}/`
+        const url = `${baseUrl}/crud/${id}/`
         axios.delete(url)
         .then (res => {
             setResponse(response.filter(user => user.id !== id))
@@ -33,7 +33,7 @@ const useFetch = (baseUrl) => {
     }
     //update
     const updateApi = (id, data) => {
-        const url = `${baseUrl}/users/${id}/`
+        const url = `${baseUrl}/crud/${id}/`
         axios.put(url, data)
             .then(res => {
                 setResponse(response.map (user => user.id ===id ? res.data : user))
